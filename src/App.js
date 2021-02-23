@@ -5,7 +5,7 @@ import Piano from "./Piano";
 function App() {
   return (
     <div className="App">
-      <h1>hello world!</h1>
+      <h1>Drone Piano</h1>
       <Piano />
     </div>
   );
