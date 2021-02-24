@@ -1,3 +1,11 @@
+html {
+  background-image: url("https://lh3.googleusercontent.com/proxy/9iDQddbiQI0ZFexsRdZASKpwolS0oWliGhoITkmM8rGQCsYDbnGzVXJhodCKWEyJXR3zS6UlDOIa4uVP973Dx22tq02qRZM");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
 h1 {
   text-align: center;
 }
@@ -101,6 +109,9 @@ h1 {
   width: 56px;
   border: 2px solid #000000;
   /* border-radius: 50%;*/
+}
+.circle:hover {
+  background-color: rebeccapurple;
 }
 
 .circle:nth-child(1) {
@@ -615,9 +626,10 @@ h1 {
   border-style: solid;
   /* background-color: red; */
   /* background-image: linear-gradient(to top right, red, #f06d06); */
-  border-width: 55.4px 37px 55.4px 217px;
-  border-color: transparent transparent transparent aliceblue;
+  border-width: 11.4px 61px 98.4px 193px;
+  border-color: transparent transparent transparent rgb(2, 2, 190);
 }
+
 .chromaticDivs:nth-child(1) {
   transform: rotate(194deg) translateX(-6px) translateY(16px);
 }
@@ -653,4 +665,46 @@ h1 {
 }
 .chromaticDivs:nth-child(12) {
   transform: rotate(285deg) translateX(-100px) translateY(-110px);
+}
+.metronome {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  margin-top: -315px;
+}
+#bpmText {
+  font-size: smaller;
+  margin-left: 45px;
+}
+#bpmInput {
+  margin-left: 36px;
+  border-radius: 25%;
+}
+#subDiv {
+  font-size: smaller;
+  margin-left: 22px;
+}
+button {
+  width: 45px;
+  height: 20px;
+  margin-right: 26px;
+  margin-left: 38px;
+  border-radius: 25%;
+}
+#subDivisionSelect {
+  margin-left: 42px;
+  border-radius: 25%;
+}
+.main-container {
+  background-color: transparent;
+}
+.nav-bar-routes {
+  padding-left: 1%;
+}
+#nav {
+  background-color: transparent;
 }

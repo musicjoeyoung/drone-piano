@@ -14,6 +14,7 @@ import {
   droneBb2,
   droneB2,
 } from "./tone.fn.js";
+import Metronome from "./Metronome";
 
 export default function Piano() {
   const synth = new Tone.Synth().toDestination();
@@ -144,6 +145,9 @@ export default function Piano() {
         <div className="chromaticDivs" onClick={droneA2}></div>
         <div className="chromaticDivs" onClick={droneBb2}></div>
         <div className="chromaticDivs" onClick={droneB2}></div>
+      </div>
+      <div className="metronome">
+        <Metronome />
       </div>
     </div>
   );

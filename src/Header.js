@@ -8,6 +8,9 @@ function Header() {
       <div className="nav-bar-container">
         <nav id="nav">
           <h1 id="main-title">Drone Piano</h1>
+          <Link className="nav-bar-routes" to="/">
+            Home
+          </Link>
           <Link className="nav-bar-routes" to="/piano">
             Piano
           </Link>
