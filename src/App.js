@@ -1,13 +1,25 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Piano from "./Piano";
+import Header from "./Header";
+import Home from "./Home";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Drone Piano</h1>
-      <Piano />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/piano">
+            <Piano />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
