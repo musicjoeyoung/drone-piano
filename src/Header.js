@@ -6,15 +6,9 @@ function Header() {
   return (
     <div className="main-container">
       <div className="nav-bar-container">
-        <nav id="nav">
-          <h1 id="main-title">Drone Piano</h1>
-          <Link className="nav-bar-routes" to="/">
-            Home
-          </Link>
-          <Link className="nav-bar-routes" to="/piano">
-            Piano
-          </Link>
-        </nav>
+        <a href="/">
+          <h1 id="title">Drone Piano</h1>
+        </a>
       </div>
     </div>
   );

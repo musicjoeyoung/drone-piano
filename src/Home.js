@@ -4,17 +4,24 @@ function Home() {
   return (
     <div>
       <div>
-        <div>
+        <a href="/piano">
+          <img src={"/arrow.png"} id="arrow" />
+        </a>
+        <div id="description">
           <p>
-            Description Here
+            The purpose of this piano is to act as another
             <br />
-            description here
+            audio/visual tool for composers.
             <br />
-            description here
+            Sometimes seeing the set up of an instrument differently can inform
             <br />
-            description here
+            new musical decisions.
             <br />
-            description here
+            <br />
+            The single-pitched drones in the middle of the piano
+            <br />
+            serve as the musical base for which the user can play on top of (or
+            against).
           </p>
         </div>
       </div>

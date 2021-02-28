@@ -1,42 +1,31 @@
-html {
-  background-image: url("https://lh3.googleusercontent.com/proxy/9iDQddbiQI0ZFexsRdZASKpwolS0oWliGhoITkmM8rGQCsYDbnGzVXJhodCKWEyJXR3zS6UlDOIa4uVP973Dx22tq02qRZM");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
+.main {
+  background-color: transparent;
+  border-radius: 10px;
 }
-
-h1 {
+p {
   text-align: center;
 }
+h1 {
+  text-align: center;
+  font-family: "DawningofaNewDay";
+}
+@font-face {
+  font-family: "DawningofaNewDay";
+  src: "/DawningofaNewDay.ttf";
+}
+#title {
+  font-family: "DawningofaNewDay";
+}
 
-.piano {
-  /*   display: flex;
-  flex-direction: row; */
-  justify-content: center;
-  position: absolute;
-  width: 65%;
-  height: 55px;
-  bottom: 1.5%;
-  right: 17.5%;
-  left: 17.5%;
-  box-shadow: 4px 3px 8px 1px #5e5a5d;
-  -webkit-box-shadow: 4px 3px 8px 1px #5e5a5d;
-  flex-grow: 1;
+#description {
+  padding-top: 5%;
 }
-.piano:hover {
-  cursor: pointer;
-}
-.white-key {
-  border: 1px solid #5e5a5d;
-
-  background-color: transparent;
-  border-radius: 5px;
-  flex-grow: 1;
-  z-index: 1;
-}
-.white-key:hover {
-  background-color: rgba(255, 255, 255, 0.733);
+#arrow {
+  margin-top: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
 #w1 {
   position: fixed;
@@ -93,7 +82,14 @@ h1 {
   margin-right: auto;
   margin-top: 10%;
 }
-
+.mainPiano {
+  width: 100%;
+  height: 140%;
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+}
 .innerkeys {
   position: absolute;
   border: 1px solid red;
@@ -629,6 +625,9 @@ h1 {
   border-width: 11.4px 61px 98.4px 193px;
   border-color: transparent transparent transparent rgb(2, 2, 190);
 }
+.chromaticDivs:hover {
+  border-color: transparent transparent transparent rgb(5, 76, 228);
+}
 
 .chromaticDivs:nth-child(1) {
   transform: rotate(194deg) translateX(-6px) translateY(16px);
@@ -702,9 +701,59 @@ button {
 .main-container {
   background-color: transparent;
 }
-.nav-bar-routes {
-  padding-left: 1%;
-}
+
 #nav {
   background-color: transparent;
+}
+#play-stop-toggle {
+  margin-left: 120%;
+}
+.piano {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  width: 65%;
+  height: 55px;
+  bottom: 1.5%;
+  right: 17.5%;
+  left: 17.5%;
+  box-shadow: 4px 3px 8px 1px #5e5a5d;
+  -webkit-box-shadow: 4px 3px 8px 1px #5e5a5d;
+  flex-grow: 1;
+}
+.piano:hover {
+  cursor: pointer;
+}
+.white-key {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #5e5a5d;
+  width: 2.8%;
+  height: 55px;
+  background-color: transparent;
+  border-radius: 5px;
+  flex-grow: 1;
+  z-index: 1;
+}
+.white-key:hover {
+  background-color: rgba(255, 255, 255, 0.733);
+}
+.black-key {
+  background-color: black;
+  width: 2%;
+  height: 40px;
+  margin-left: -4.5px;
+  margin-right: -4.5px;
+  border-radius: 5px;
+  flex-grow: 2;
+  z-index: 2;
+}
+#synthOption {
+  position: fixed;
+  /* left: auto; */
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
