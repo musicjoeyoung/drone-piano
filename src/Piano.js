@@ -88,18 +88,7 @@ function Piano(note) {
   return (
     <div className="mainPiano">
       <ParticlesBg type="circle" bg={true} />
-      <select id="synthOption">
-        <option value="synth">Synth</option>
-        <option value="AMSynth">AMSynth</option>
-        <option value="FMSynth">Frequency Modulation</option>
-        <option value="PluckSynth">Pluck Synth</option>
-        <option value="MetalSynth">MetalSynth</option>
-        <option value="DuoSynth">DuoSynth</option>
-        <option value="MembraneSynth">MembraneSynth</option>
-        <option value="piano">Grand Piano</option>
-        <option value="pianoSustain">Grand Piano - Sustain</option>
-        <option value="casio">Casio</option>
-      </select>
+
       <div className="main">
         <div className="circle" onClick={() => playNote("D3")}></div>
         <div className="circle" onClick={() => playNote("B4")}></div>
@@ -209,6 +198,18 @@ function Piano(note) {
         <div className="circle" onClick={() => playNote("Bb0")}></div>
         {/* inner drones */}
         <div className="chromaticDivsMain">
+          <select id="synthOption">
+            <option value="piano">Piano</option>
+            <option value="pianoSustain">Piano(sustain)</option>
+            <option value="casio">Casio</option>
+            <option value="synth">Synth</option>
+            <option value="AMSynth">AM Synth</option>
+            <option value="FMSynth">FM Synth</option>
+            <option value="PluckSynth">Pluck</option>
+            <option value="MetalSynth">Metal</option>
+            <option value="DuoSynth">Duo</option>
+            <option value="MembraneSynth">Membrane</option>
+          </select>
           <div
             className="chromaticDivs"
             onClick={() => playLowNote("Ab0")}
@@ -253,7 +254,7 @@ function Piano(note) {
             className="chromaticDivs"
             onClick={() => playLowNote("Gb1")}
           ></div>
-          <div
+          <div id="lowG"
             className="chromaticDivs"
             onClick={() => playLowNote("G1")}
           ></div>

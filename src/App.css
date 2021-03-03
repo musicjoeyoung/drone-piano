@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "DawningofaNewDay";
+  src: "./public/DawningofaNewDay.ttf";
+}
 .main {
   background-color: transparent;
   border-radius: 10px;
@@ -8,10 +12,6 @@ p {
 h1 {
   text-align: center;
   font-family: "DawningofaNewDay";
-}
-@font-face {
-  font-family: "DawningofaNewDay";
-  src: "/DawningofaNewDay.ttf";
 }
 #title {
   font-family: "DawningofaNewDay";
@@ -80,7 +80,7 @@ h1 {
   height: 500px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10%;
+  margin-top: 15%;
 }
 .mainPiano {
   width: 100%;
@@ -628,6 +628,9 @@ h1 {
 .chromaticDivs:hover {
   border-color: transparent transparent transparent rgb(5, 76, 228);
 }
+#lowG {
+  transform: rotate(195deg) translate(-6px, 18px);
+}
 
 .chromaticDivs:nth-child(1) {
   transform: rotate(194deg) translateX(-6px) translateY(16px);
@@ -750,10 +753,12 @@ button {
   z-index: 2;
 }
 #synthOption {
-  position: fixed;
-  /* left: auto; */
-  top: 32%;
+  position: absolute;
+  top: 50%;
   left: 50%;
+  width: 17%;
+  border-radius: 250px;
+  border: 2px solid black;
   transform: translate(-50%, -50%);
   z-index: 1;
 }
