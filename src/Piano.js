@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import * as Tone from "tone";
 import ParticlesBg from "particles-bg";
 
@@ -254,7 +253,8 @@ function Piano(note) {
             className="chromaticDivs"
             onClick={() => playLowNote("Gb1")}
           ></div>
-          <div id="lowG"
+          <div
+            id="lowG"
             className="chromaticDivs"
             onClick={() => playLowNote("G1")}
           ></div>
