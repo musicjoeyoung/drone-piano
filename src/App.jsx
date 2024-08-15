@@ -1,9 +1,10 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Piano from "./Piano";
+
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+
 import Header from "./Header";
 import Home from "./Home";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Piano from "./Piano";
 
 function App() {
   return (

@@ -1,7 +1,5 @@
-@font-face {
-  font-family: "DawningofaNewDay";
-  src: "./public/DawningofaNewDay.ttf";
-}
+@use "./styles/partials/index" as *;
+
 .main {
   background-color: transparent;
   border-radius: 10px;
